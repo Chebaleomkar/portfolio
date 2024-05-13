@@ -1,52 +1,50 @@
+import React from 'react';
+import Link from 'next/link';
+import { Button } from './ui/button';
+import Tag from './Tag'; // Import Tag component
+import { cn } from '@/lib/utils';
 
-  import React from 'react';
-  import Link from 'next/link';
-  import { Button } from './ui/button';
-  import { cn } from '@/lib/utils';
-import { Tag } from 'lucide-react';
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: string;
+  demoUrl?: string;
+  githubUrl: string;
+  TitleColor?: string;
+}
 
-  interface ProjectCardProps{
-    title : string;
-    description : string;
-    tags : string[];
-    imageUrl : string;
-    demoUrl? : string;
-    githubUrl : string;
-    TitleColor? : string;
-  }
+const ProjectCard = ({ title, description, tags, imageUrl, demoUrl, githubUrl, TitleColor }: ProjectCardProps) => {
+  return (
+    <div className="bg-gray-800 border border-yellow-500 shadow-lg rounded-lg overflow-hidden group relative">
+      <img className="w-full h-320 object-cover object-center" src={imageUrl} alt={title} />
 
-  const ProjectCard = ({  title, description,tags, imageUrl, demoUrl, githubUrl , TitleColor  }:ProjectCardProps) => {
+      <div className="p-4">
+        <h3 className={`text-xl font-bold mb-2 ${TitleColor ? `${TitleColor}` : 'text-black'}`}>{title}</h3>
 
-    return (
-      <div className="bg-gray-800  shadow-lg rounded-lg overflow-hidden">
-        <img className="w-full h-320 object-cover object-center" src={imageUrl} alt={title} />
-
-        <div className="p-4">
-          <h3 className={`text-xl font-bold mb-2 ${TitleColor ? `${TitleColor}` : 'text-black'} '}  `}>{title}</h3>
-          
-           <div className="flex flex-wrap gap-1 mb-4 h-16">
+        <div className="flex flex-wrap gap-1 mb-4 h-16">
           {tags.map((tag, i) => (
-          <span key={i} className="text-white p-2  border border-blue-300 rounded-md text-[11px] inline-block relative overflow-hidden">
-          {tag}
-        </span>
-        
-         
+            <Tag key={i} tag={tag} color={i % 2 === 0 ? 'border-green-500' : 'border-blue-500'} />
           ))}
         </div>
 
-          <div className="flex justify-between">
-
-          {demoUrl &&  <Link href={demoUrl}>
-              <Button variant="secondary" className="text-blue-500 hover:underline">Live </Button>
-            </Link>}
-
-            <Link href={githubUrl}>
-              <Button variant="secondary" className="text-green-500 hover:underline">GitHub</Button>
+        <div className="flex justify-between">
+          {demoUrl && (
+            <Link href={demoUrl}>
+              <Button variant="secondary" className="text-blue-500 hover:underline">
+                Live
+              </Button>
             </Link>
-          </div>
+          )}
+          <Link href={githubUrl}>
+            <Button variant="secondary" className="text-green-500 hover:underline">
+              GitHub
+            </Button>
+          </Link>
         </div>
       </div>
-    );
-  };
+      </div>
+  );
+};
 
-  export default ProjectCard;
+export default ProjectCard;

@@ -19,6 +19,7 @@ export const Bio = {
   twitter: "https://twitter.com/chebalerushi",
   insta: "https://www.instagram.com/chebalerushi/",
   facebook: "https://www.facebook.com/rushi.chebale.1",
+  stack_overflow: "https://stackoverflow.com/users/21063836/omkar-chebale",
 };
 
 export const skills = [
@@ -383,8 +384,8 @@ export const projects = [
       "https://media.licdn.com/dms/image/D5622AQHfwV-IdREihg/feedshare-shrink_800/0/1701852160658?e=1714003200&v=beta&t=6ugLm0DkX1NVuWz8XfXPaDkZ6fHX0QWJQHtriZHsOvI",
     tags: ["React Js", "NodeJs" , "Express" , "Stripe" , "Sass" , "Api Integration" ],
     category: "machine learning",
-    github: " https://lnkd.in/gKMiSx4y",
-    webapp: " https://lnkd.in/gKMiSx4y",
+    github: " https://github.com/Chebaleomkar/Trendz-E-commerce-full_stack-app",
+    webapp: "https://github.com/Chebaleomkar/Trendz-E-commerce-full_stack-app",
     member: [
       {
         name: "Omkar Chebale",

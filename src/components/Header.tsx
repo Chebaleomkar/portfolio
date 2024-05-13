@@ -7,11 +7,7 @@ const Header = () => {
     <header className="bg-gray-800 py-4">
     <div className="container mx-auto px-4">
       <nav className="flex justify-between items-center">
-        <div>
-          <Link href="/">
-            <b className="text-white text-xl font-bold">omkar chebale</b>
-          </Link>
-        </div>
+       
         <div>
           <Link href="#about">
             <b className="text-gray-300 hover:text-white px-3 py-1">About</b>

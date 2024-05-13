@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { projects } from '../../constants';
 import ProjectCard from './ProjectCard';
+import Title from './Title';
 
 const Project = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
-  const projectsToShow = showAllProjects ? projects : projects.slice(0, 8);
+  const projectsToShow = showAllProjects ? projects : projects.slice(0, 6); // Change the number to limit the initial display
 
   const toggleShowAllProjects = () => {
     setShowAllProjects(!showAllProjects);
@@ -12,7 +13,7 @@ const Project = () => {
 
   return (
     <div>
-      <h2>Projects</h2>
+      <Title id='projects' title='Projects' />
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {projectsToShow.map((project) => (
           <ProjectCard
@@ -28,12 +29,15 @@ const Project = () => {
         ))}
       </div>
       {!showAllProjects && (
-        <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-md" onClick={toggleShowAllProjects}>
+        <button
+          className="mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out"
+          onClick={toggleShowAllProjects}
+        >
           Show More
         </button>
       )}
     </div>
   );
-}
+};
 
 export default Project;
