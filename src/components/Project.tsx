@@ -1,37 +1,29 @@
 import React, { useState } from 'react';
-import { projects } from '../../constants';
-import ProjectCard from './ProjectCard';
+import { blogs } from '../../constants';
+import BlogPage from './BlogPage';
 import Title from './Title';
 
-const Project = () => {
-  const [showAllProjects, setShowAllProjects] = useState(false);
-  const projectsToShow = showAllProjects ? projects : projects.slice(0, 6); // Change the number to limit the initial display
+const Blog = () => {
+  const [showAllBlogs, setShowAllBlogs] = useState(false);
+  const blogsToShow = showAllBlogs ? blogs : blogs.slice(0, 4);
 
-  const toggleShowAllProjects = () => {
-    setShowAllProjects(!showAllProjects);
+  const toggleShowAllBlogs = () => {
+    setShowAllBlogs(!showAllBlogs);
   };
 
   return (
-    <div>
-      <Title id='projects' title='Projects' />
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {projectsToShow.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            tags={project.tags}
-            imageUrl={project.image}
-            demoUrl={project.webapp}
-            githubUrl={project?.github}
-            TitleColor={project?.TitleColor}
-          />
+    <div className='bg-gray-800'>
+      <Title id='blog' title='Blogs' />
+      <div className='text-white p-4'>
+        {blogsToShow.map((blog, index) => (
+          <BlogPage key={index} link={blog.link} title={blog.title} topic={blog.topic} />
         ))}
       </div>
-      {!showAllProjects && (
+
+      {!showAllBlogs && (
         <button
           className="mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out"
-          onClick={toggleShowAllProjects}
+          onClick={toggleShowAllBlogs}
         >
           Show More
         </button>
@@ -40,4 +32,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Blog;

@@ -468,6 +468,14 @@ export const projects = [
  
 ];
 
+export const blogs =[
+  {
+    title : "what , why and how zod works?",
+    link : "https://medium.com/@omkarchebale0/what-why-and-how-zod-works-b022e3bd13ec",
+    topic : "zod"
+  },
+]
+
 export const TimeLineData = [
   { year: 2017, text: "Started my journey" },
   { year: 2018, text: "Worked as a freelance developer" },
