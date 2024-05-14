@@ -7,7 +7,7 @@ const Blog = () => {
   
 
   return (
-    <div className='bg-gray-800 h-screen'>
+    <div className='bg-gray-800 '>
       <Title id='blog' title='Blogs' />
       <div className='text-white p-4'>
         {blogs.map((blog, index) => (

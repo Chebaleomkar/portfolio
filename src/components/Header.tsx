@@ -5,7 +5,7 @@ import { ModeToggle } from './ui/ModeToggle'
 const Header = () => {
   return (
     <header className="bg-gray-800 py-4">
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto ">
       <nav className="flex justify-between items-center">
        
         <div>
@@ -18,9 +18,7 @@ const Header = () => {
           <Link href="#blog">
             <b className="text-gray-300 hover:text-white px-3 py-1">Blog</b>
           </Link>
-          <Link href="#education">
-            <b className="text-gray-300 hover:text-white px-3 py-1">Education</b>
-          </Link>
+       
           <Link href="#contact">
             <b className="text-gray-300 hover:text-white px-3 py-1">Contact</b>
           </Link>
