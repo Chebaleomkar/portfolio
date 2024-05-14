@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { IoIosSend } from "react-icons/io";
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Textarea } from './ui/textarea';
@@ -81,8 +82,9 @@ const ContactUs = () => {
             )}
           />
           <div className="mt-8 flex justify-end">
+            
             <Button type="submit" className="w-full sm:w-auto">
-              Send
+               <IoIosSend size={30} /> Send
             </Button>
           </div>
         </form>

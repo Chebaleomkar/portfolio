@@ -15,7 +15,7 @@ export const Bio = {
   github: "https://github.com/Chebaleomkar",
   resume:
     "https://drive.google.com/file/d/1_xD17Kg6MS0T0ahDAxltGXSxsccutMxr/view?usp=drive_link",
-  linkedin: "https://www.linkedin.com/in/omkar-chebale-8b251726b/",
+  linkedin:"https://www.linkedin.com/in/omkar-chebale-8b251726b/",
   twitter: "https://twitter.com/chebalerushi",
   insta: "https://www.instagram.com/chebalerushi/",
   facebook: "https://www.facebook.com/rushi.chebale.1",
@@ -280,7 +280,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/Chebaleomkar/Netlfix-clone",
-    webapp: "https://github.com/Chebaleomkar/Netlfix-clone",
+    // webapp: "https://github.com/Chebaleomkar/Netlfix-clone",
     member: [
       {
         name: "Omkar Chebale",
@@ -309,7 +309,7 @@ export const projects = [
   ],
     category: "web app",
     github: "https://github.com/Chebaleomkar/youtube-clone",
-    webapp: "https://github.com/Chebaleomkar/youtube-clone",
+    // webapp: "https://github.com/Chebaleomkar/youtube-clone",
     member: [
       {
         name: "Omkar Chebale",
@@ -340,7 +340,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/Chebaleomkar/React-Dashboard_advance-App",
-    webapp: "https://github.com/Chebaleomkar/React-Dashboard_advance-App",
+    // webapp: "https://github.com/Chebaleomkar/React-Dashboard_advance-App",
     member: [
       {
         name: "Omkar Chebale",
@@ -385,7 +385,7 @@ export const projects = [
     tags: ["React Js", "NodeJs" , "Express" , "Stripe" , "Sass" , "Api Integration" ],
     category: "machine learning",
     github: " https://github.com/Chebaleomkar/Trendz-E-commerce-full_stack-app",
-    webapp: "https://github.com/Chebaleomkar/Trendz-E-commerce-full_stack-app",
+    // webapp: "https://github.com/Chebaleomkar/Trendz-E-commerce-full_stack-app",
     member: [
       {
         name: "Omkar Chebale",
@@ -408,7 +408,7 @@ export const projects = [
     tags: ["HTML", "CSS" , "JS" ,"Api Integration" ],
     category: "web App ",
     github: " https://github.com/Chebaleomkar/joke-chrome-Extension",
-    webapp: "https://github.com/Chebaleomkar/joke-chrome-Extension",
+    // webapp: "https://github.com/Chebaleomkar/joke-chrome-Extension",
     member: [
       {
         name: "Omkar Chebale",
@@ -431,7 +431,7 @@ export const projects = [
     tags: ["HTML", "CSS" , "Js" , "PWA" ,"Api Integration" ],
     category: "machine learning",
     github: "https://github.com/Chebaleomkar/pnr-status-pwa",
-    webapp: " https://github.com/Chebaleomkar/pnr-status-pwa",
+    // webapp: " https://github.com/Chebaleomkar/pnr-status-pwa",
     member: [
       {
         name: "Omkar Chebale",

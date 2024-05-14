@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, tags, imageUrl, demoUrl, githubUrl, T
           ))}
         </div>
 
-        <div className="flex justify-between">
+        <div  className={`flex justify-${demoUrl ? 'between' : 'center'}`}>
           {demoUrl && (
             <Link href={demoUrl}>
               <Button variant="secondary" className="text-blue-500 hover:underline">
@@ -36,6 +36,7 @@ const ProjectCard = ({ title, description, tags, imageUrl, demoUrl, githubUrl, T
               </Button>
             </Link>
           )}
+
           <Link href={githubUrl}>
             <Button variant="secondary" className="text-green-500 hover:underline">
               GitHub
